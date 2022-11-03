@@ -45,6 +45,21 @@ app.post('/insereExperiencia', (req, res) => {
 });
 
 //UPDATE do CRUD
+app.get('/atualizaExperiencia', (req, res) =>{
+    res.statusCode = 200;
+    res.setHeader('Access-Control-Allow-Origin', '*'); 
+    sql = "SELECT * FROM EXPERIENCIA WHERE experienciaID="+ req.query.experienciaID;
+    console.log(sql);
+    var db = new sqlite3.Database(DBPATH);
+    db.all(sql, [], (err, rows ) =>{
+        if(err){
+            throw err;
+        }
+        res.json(rows)
+    });
+    db.close();
+});
+
 app.post('/autalizaExperiencia',urlencodeParser, (req, res) =>{
     res.statusCode = 200;
     res.setHeader('Acess-Control-Allow-Origin', '*');
