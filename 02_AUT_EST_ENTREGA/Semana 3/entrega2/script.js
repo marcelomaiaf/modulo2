@@ -89,4 +89,3 @@ function kwh(){
 	
 	
 }
-console.log(kwh())
