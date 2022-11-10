@@ -31,7 +31,7 @@ app.post('/insereExperiencia', (req, res) => {
     res.statusCode = 200;
     console.log(req.body.experienciaID)
     res.setHeader('Acess-Control-Allow-Origin', '*');
-    sql = "SELECT * FROM EXPERIENCIA WHERE experienciaID='"+ req.body.experienciaID+"'";
+    sql = "INSERT INTO EXPERIENCIA(empresa, ano, descricao, atribuicoes, resultados_obtidos, cargo, experienciaID) VALUES('" + req.body.empresa + "', '" + req.body.ano + "',  '" + req.body.descricao + "',  '" + req.body.atribuicoes + "' ,'" + req.body.resultados_obtidos + "', '" + req.body.cargo + "', '" + req.body.experienciaID + ")";
     console.log(sql);
     var db = new sqlite3.Database(DBPATH); // isso serve para abrir o banco de dados 
     db.all(sql, [], (err, rows ) =>{
