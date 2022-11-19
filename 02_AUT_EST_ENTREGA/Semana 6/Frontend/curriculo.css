@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body, html{
+    background:#f9f6f6 ;
+    color: #f1f1f1;
+    font-family: 'Noto Serif', serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#cabecalho {
+    width: 100%;
+    height: 15%;
+}
+
+#sobre{
+    width: 20%;
+    float: right;
+    background: #292960;
+    height: 100%;
+}
+
+#dados{
+    width: 80%;
+    float: left;
+    color:rgb(121, 120, 120);
+}
+.interno{
+padding: 10px;
+margin-right: 550px;
+}
+.elemento1 {
+    background: #292960;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px 20px;
+}
+
+#linha{
+    width: 30%;
+    height: 100%;
+}
+#foto {
+    width: 100%;
+}
+#rodape {
+    width: 100%;
+    height: 5%;
+    clear: both;
+    background-color: #666;
+    text-align: center;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #666;
+    border: solid 1px #c3c3c3;
+  }
+  
+#panel {
+    padding: 50px;
+    display: none;
+  }
+
+.elemento2{
+    background: #292960;
+    height: 25px;
+    width: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    color: #f1f1f1;
+    margin-left: 400px;
+    border-color: #292960
+    
+}
+
+.botao{
+     background: #292960;
+    height: 30px;
+    width: 400px;
+    color: #f1f1f1;
+    margin-left: 200px;
+    border-color: #cfcfff;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
