@@ -1,0 +1,50 @@
+.botao{
+    background-color: chartreuse;
+    border-radius: 20px;
+}
+
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+body{
+    text-align: center;
+}
+
+.caixatext{
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: darkgreen;
+}
+
+.T{
+   color: hwb(hue white black); 
+}
+
+.A{
+    color: rebeccapurple;
+}
+
+.B{
+    color: slateblue;
+}
+
+.U{
+    color: navy;
+}
+
+.A1{
+    color: gold;
+}
+
+.D{
+    color: orangered
+}
+
+.A2{
+    color: darkgoldenrod;
+}
