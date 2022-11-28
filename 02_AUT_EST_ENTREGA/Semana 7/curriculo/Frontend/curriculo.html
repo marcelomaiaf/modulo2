@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link rel="stylesheet" type="text/css" href="curriculo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("p").toggle();
+          });
+        });
+        </script>
+    
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+        }
+
+       
+
+    </script>
+
+    <script> //DEVE SER ABERTO COM O LIVE SERVER!!!!!!
+        function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("rodape").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "curriculo.txt");
+        xhttp.send();
+        }
+    </script>
+
+    <style>
+     
+        .dark{
+            background-color: #222;
+            color: #e6e6e6 !important;
+        }
+    </style>
+
+        
+</head>
+<body>
+    <header>
+    <div id="sobre">
+        <div id="foto">
+            <img src="C:\Users\marce\OneDrive\Documentos\GitHub\modulo2\02_AUT_EST_ENTREGA\Semana 5\Marcelo_Maia.JPG" alt="foto">
+        </div>
+        <div id="sobre2">
+            <h1>Marcelo Maia</h1>
+            <h4>Engenharia de Software</h4>
+            <hr>
+            <h1> Contato</h1>
+            <p>Telefone: (85) 97589-0945
+                <br> Email: marcelo.filho@sou.inteli.edu.br </br>
+                <br>linkedin:
+                <a href="www.linkedin.com/in/marcelo-maia-b90b03231"> Marcelo Maia</a>
+                </br>
+            </p>
+            <hr>
+            <p>
+                <h1>Sobre mim</h1>
+                Fui aprovado em quatro faculdades brasileiras (UFC, Inteli, UECE, Unifor), tendo escolhido o Instituto de Tecnologia e Liderança, no qual fui aprovado em terceiro lugar e recebi uma bolsa por desempenho.
+                    <br>Estudante de Engenharia de Software.</br>
+                    <br>Participação em competições relacionadas a economia e finanças.</br>
+                    <br>Interesse em Bitcoin, Blockchain e projetos descentralizados.</br>
+                    <br>Atuação em desenvolvimentos de projetos em equipe, buscando resolver um problema real através da tecnologia.</br>
+            </p>
+            <hr>
+        </div>
+    </div>
+    <div id="dados">
+        <button class="elemento2">Esconder conteúdo</button>
+        <span class="botao" onclick="myFunction()">Modo escuro</span>
+        <span class="botao" onclick="loadDoc()">Rodape</span>
+        <div class="elemento1" style="color:#FFF" > <h1>Formação</h1></div> 
+        <hr>
+        <h3>Engenharia de software <strong>|2022-2026</strong></h3>
+        <div  class="interno">
+            <p>Fiz Engenharia de software no instituto de tecnologia e liderança(inteli), onde fiz projetos para grandes empresas.</p><br></br>
+        </div>
+        <div  class="elemento1"  style="color:#FFF" > <h1>Experiência</h1></div>
+        <hr>
+        <h3>Desenvolvimento de um Serious game para DELL</h3>
+        <div class="interno">
+            <p id="printar">No primeiro módulo da graduação, em uma parceria da Inteli com a empresa Dell, eu e um grupo de 7 pessoas criamos o jogo "Castledell" durante um período de dez semanas, com o principal objetivo de auxiliar no onboarding da companhia. Nesta jornada, aprendi conceitos importantes de programação, matemática, física, user experience e negócios.</p>
+        </div>
+        <br><h3>Aplicação Web para a MRV&CO</h3></br>
+        <div class="interno"> 
+            <p id="printar">Em conjunto com meu grupo Growth, desenvolvemos em um período de dez semanas, uma aplicação web para a MRV&CO  com o objetivo de facilitar o cadastramento e a conexão de empreiteiras para a realização de obras futuras, diminuindo o tempo de cadastro de aproximadamente 2 meses para cerca de 2 semanas.</p><br></br>
+        </div>
+        <div class="elemento1" style="color:#FFF" ><h1>Realizações</h1></div>
+        <hr>
+        <div class="interno"> 
+            <h3>Olimíada Brasileira de Economia</h3><br>
+            <p> Finalista na olimpíada brasileira de economia, no qual juntamente ao meu grupo idealizei um ETF de créditos de carbono e célula de produção agricola.</p><br>
+            <h3>Inteli Blockchain </h3>
+            <p>clube que desenvolve soluções e projetos para empresas de mercado.</p><br>
+            <h3>Descobrimento de um asteroide</h3>
+            <p>em 2020 descobri um asteroide por meio de uma foto da NASA.</p>
+
+        </div>
+
+    </div>
+    
+    <div id="rodape"> <!--AQUI O AJAX IRÁ TROCAR O CONTEÚDO ESCRITO-->
+        idiomas: <br> inglês: B2; português: C2
+        
+    </div>
+
+
+    </header>
+</body>
+</html>
