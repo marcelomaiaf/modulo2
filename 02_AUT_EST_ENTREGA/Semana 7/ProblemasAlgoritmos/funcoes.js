@@ -43,7 +43,7 @@ function pi() {
     var resposta3 = document.getElementById('resposta3');
     var sequencia='';
 
-    for   (var i=1 ; i<lim; i++)
+    for (var i=1 ; i<lim; i++)
         if(i%3==0){
             sequencia += i+" PI ";
 
@@ -51,6 +51,7 @@ function pi() {
         
         else{
             sequencia += i + " - ";
+
         }
         
         resposta3.innerHTML = sequencia;
