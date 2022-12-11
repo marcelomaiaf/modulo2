@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP_VL</title>
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" href="algoritmo.css">
+</head>
+<body>
+    <h1>Resolução com algoritmos</h1>
+    <a href="juros.html">juros</a> <a href="binario.html">binário</a> <a href="maluca.html">impressão maluca</a>
+    <h2>valor presente e valor futuro</h2>
+    <select name="tabela" id="1">
+        <option value="VP">calcula valor presente</option>
+        <option value="VF">calcula valor futuro</option>
+    </select>
+    <p>coloque a taxa mensal</p><input id="i" type="number" placeholder="Insira o Valor da taxa(i) em %">
+    <p>insira o número de período em meses</p><input id="n" type="number" placeholder="Insira o número de períodos(n) em meses">
+    <p>insira o valor</p><input id="V" type="number" placeholder="Insira o Valor">
+    <br>
+    <button onclick="valor()">enviar</button>
+    <div id="100"></div>
+</body>
+</html>
